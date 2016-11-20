@@ -10,7 +10,7 @@ using namespace std;
 	
 // Class Up_Quark represents an up_quark
 
-class Up_Quark
+/*class Up_Quark
 {
 	private:
 		double electric_charge;
@@ -94,16 +94,7 @@ class Neutron
 };
 
 
-//class represents nucleus of an atom
 
-class Nucleus
-{
-	private:
-		Proton protons;
-		Neutron neutrons;
-	public:
-		Nucleus(int p, int n): protons(p), neutrons(n) { }
-};
 
 
 // Implementation of class Electron
@@ -123,21 +114,7 @@ class Electron
 		void print();	// Prints information of an electron
 };
 
-// class Atom represents an atom	//
-class Atom
-{
-	private:
-		Nucleus nucleus;
-		Electron electrons;
-		
-	public:
-		Atom(int protons, int neutrons, int electrons): nucleus{protons+neutrons}, electrons{electrons}	{ }		// Constructor of class Atom
-		~Atom();							// Destructor
-		//int get_atom_number();				// Function which returns the Atomic Number of Atom
-	//	int get_mass_number();				// Function which returns the Mass Number of Atom
-	//	int get_electric_charge();			// Function which calculates and return the Electric Charge of Atom
-		void print();						// Function which prints all the information has an Atom
-};
+
 
 // Implementation of Constructor of Class Atom //
 
